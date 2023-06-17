@@ -11,10 +11,26 @@
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-width: 320px;
+  max-width: 448px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 li {
@@ -169,8 +185,9 @@ img {
 
 .hero {
   background: var(--dark);
-  padding-top: 188px;
-  padding-bottom: 188px;
+
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -180,8 +197,18 @@ img {
 
   background-size: cover;
   background-position: center;
-  width: 1440px;
-  margin: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
+@media only screen and (min-width: 768px) {
+   {
+  }
 }
 .hero-title {
   display: block;
