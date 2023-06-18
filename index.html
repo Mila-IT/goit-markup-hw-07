@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="./css/styles.css" rel="stylesheet" />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +23,7 @@
   <body>
     <!-- Header -->
 
-    <!-- <header class="navigation">
+    <header class="navigation">
       <div class="container nav">
         <nav class="main-nav">
           <a class="logo" href="./index.html"
@@ -58,18 +59,26 @@
           </ul>
         </address>
       </div>
-    </header> -->
+
+     </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Company feature -->
       <!-- <section class="feature">
@@ -464,7 +473,7 @@
       </div>
     </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
@@ -553,7 +562,85 @@
           <button class="hero-button" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+          <svg class="mobile-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-list">
+          <a  class="mobile-phone-link" href="mailto:info@devstudio.com" >+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-contacts-list">
+          <a class="mobile-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+     <div class="mobile-social">
+          <ul class="company-social-list">
+            <li class="company-social-item">
+              <a class="company-social-link" href=""
+                ><svg class="company-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon--2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-social-item">
+              <a class="company-social-link" href=""
+                ><svg class="company-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-social-item">
+              <a class="company-social-link" href=""
+                ><svg class="company-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-social-item">
+              <a class="company-social-link" href=""
+                ><svg class="company-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
+
+    <!-- AOS animation -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation-on-scroll.js"></script>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <!-- <script src="./js/form.js"></script> -->
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>

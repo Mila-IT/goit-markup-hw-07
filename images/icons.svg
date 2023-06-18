@@ -86,6 +86,16 @@
       <path d="M20 8H4c-1.1 0-1.99.9-1.99 2L2 22c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-.4 4.25-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 12.25a.85.85 0 1 1 .9-1.44L12 15l6.7-4.19a.85.85 0 1 1 .9 1.44z"/>
     </symbol>
 
+
+    
+ 
+
+ <symbol id="icon-charm_menu-hamburger"><g clip-path="url(#clip0_297053_2156)">
+<path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773C12.8831 1.42773 30.8861 1.42773 30.8861 1.42773" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<symbol/>
+
+
   </defs>
 </svg>
 
