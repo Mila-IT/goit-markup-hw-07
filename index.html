@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="./css/modern-normalize.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./css/styles.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,10 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./css/modern-normalize.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
-
     <header class="navigation">
       <div class="container nav">
         <nav class="main-nav">
@@ -72,14 +72,14 @@
 
     <main>
       <!-- Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Company feature -->
       <section class="feature">
@@ -147,25 +147,40 @@
             <li class="focus-item">
               <img
                 class="focus-img"
-                src="./images/monitor.jpg"
+                srcset="
+                  ./images/focus/img-1.jpg    1x,
+                  ./images/focus/img-1@2x.jpg 2x
+                "
+                src="./images/focus/img-1.jpg"
                 alt="computer monitor"
                 width="360"
+                loading="lazy"
               />
             </li>
             <li class="focus-item">
               <img
                 class="focus-img"
-                src="./images/smartphone.jpg"
+                srcset="
+                  ./images/focus/img-2.jpg    1x,
+                  ./images/focus/img-2@2x.jpg 2x
+                "
+                src="./images/focus/img-2.jpg"
                 alt="smartphone and several of its tabs"
                 width="360"
+                loading="lazy"
               />
             </li>
             <li class="focus-item">
               <img
                 class="focus-img"
-                src="./images/laptop.jpg"
+                srcset="
+                  ./images/focus/img-3.jpg    1x,
+                  ./images/focus/img-3@2x.jpg 2x
+                "
+                src="./images/focus/img-3.jpg"
                 alt="laptop on the table and smartphone in hand"
                 width="360"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -178,7 +193,16 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/Mark.jpg" alt="team-card" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-1.jpg    1x,
+                  ./images/team/img-1@2x.jpg 2x
+                "
+                src="./images/team/img-1.jpg"
+                alt="team-card"
+                width="264"
+                loading="lazy"
+              />
               <div class="card-team">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -218,7 +242,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Tom.jpg" alt="team-card-2" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-2.jpg    1x,
+                  ./images/team/img-2@2x.jpg 2x
+                "
+                src="./images/team/img-2.jpg"
+                alt="team-card-2"
+                width="264"
+                loading="lazy"
+              />
               <div class="card-team">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -258,7 +291,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Camila.jpg" alt="team-card-3" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-3.jpg    1x,
+                  ./images/team/img-3@2x.jpg 2x
+                "
+                src="./images/team/img-3.jpg"
+                alt="team-card-3"
+                width="264"
+                loading="lazy"
+              />
               <div class="card-team">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -298,7 +340,16 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Daniel.jpg" alt="team-card-4" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-4.jpg    1x,
+                  ./images/team/img-4@2x.jpg 2x
+                "
+                src="./images/team/img-4.jpg"
+                alt="team-card-4"
+                width="264"
+                loading="lazy"
+              />
               <div class="card-team">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -474,7 +525,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
@@ -563,7 +614,7 @@
           <button class="hero-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="menu-toggle js-close-menu">
@@ -597,38 +648,36 @@
         </li>
       </ul>
 
-      <div class="mobile-social">
-        <ul class="company-social-list">
-          <li class="company-social-item">
-            <a class="company-social-link" href=""
-              ><svg class="company-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon--2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-social-item">
-            <a class="company-social-link" href=""
-              ><svg class="company-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-social-item">
-            <a class="company-social-link" href=""
-              ><svg class="company-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-social-item">
-            <a class="company-social-link" href=""
-              ><svg class="company-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="company-social-list mobile-social">
+        <li class="company-social-item">
+          <a class="company-social-link" href=""
+            ><svg class="company-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon--2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="company-social-item">
+          <a class="company-social-link" href=""
+            ><svg class="company-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="company-social-item">
+          <a class="company-social-link" href=""
+            ><svg class="company-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="company-social-item">
+          <a class="company-social-link" href=""
+            ><svg class="company-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- AOS animation -->
