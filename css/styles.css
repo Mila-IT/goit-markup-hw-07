@@ -135,7 +135,6 @@ img {
     width: 66px;
     height: 4px;
     left: 0px;
-    top: 44px;
     margin-top: 20px;
     bottom: -1px;
 
@@ -571,6 +570,7 @@ img {
 }
 
 .modal-btn-icon {
+  transform: translatey(-10%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -994,10 +994,15 @@ img {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .subscribe-form {
+    justify-content: center;
+  }
+}
 .subscribe-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   gap: 16px;
 }
 
@@ -1023,11 +1028,15 @@ img {
   border: 1px solid #ffffff;
   border-radius: 4px;
   outline: none;
-  opacity: 0.3;
 
   background-color: transparent;
   color: var(--white-bcg);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+@media only screen and (max-width: 1157px) {
+  .subscribe-box {
+    opacity: 0.3;
+  }
 }
 
 .subscribe-box::placeholder {
