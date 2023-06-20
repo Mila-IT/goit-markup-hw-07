@@ -1004,8 +1004,14 @@ img {
 .subscribe-form {
   display: flex;
   flex-wrap: wrap;
-
   gap: 16px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .subscribe-form {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }
 
 .subscribe-label {
@@ -1335,6 +1341,7 @@ img {
   .customer-list {
     width: 552px;
     margin: 0 auto;
+    row-gap: 72px;
   }
 }
 @media only screen and (min-width: 1158px) {
